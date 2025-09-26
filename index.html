@@ -5,67 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World of Trees - Home</title>
 </head>
-<!-- Using deprecated HTML attributes for styling as requested, to avoid CSS -->
 <body
-  background="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=2070"
-  text="#F5F5DC"
+  background="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1527"
+  text="#FFFFFF"
   link="#90EE90"
   vlink="#98FB98"
   alink="#FFFFFF"
 >
 
-  <!-- Main layout table -->
-  <table width="100%" border="0" cellpadding="20" cellspacing="0">
+<!-- Main Layout Table -->
+<table width="100%" border="0" cellpadding="10" cellspacing="0">
     <tr>
-      <td align="center">
+        <td colspan="5" align="center">
+            <font face="Georgia, serif" size="7" color="#ADFF2F"><b>The World of Trees</b></font>
+        </td>
+    </tr>
+    <!-- Navigation Bar -->
+    <tr bgcolor="#000000" align="center">
+        <td><a href="index.html"><font color="#ADFF2F"><b>Home</b></font></a></td>
+        <td><a href="origin.html"><font color="#FFFFFF">Origin</font></a></td>
+        <td><a href="scientific.html"><font color="#FFFFFF">Science</font></a></td>
+        <td><a href="species.html"><font color="#FFFFFF">Species</font></a></td>
+        <td><a href="feedback.html"><font color="#FFFFFF">Feedback</font></a></td>
+    </tr>
+    <tr>
+      <td colspan="5" align="center">
         
         <!-- Content table with a dark, semi-transparent-like background -->
-        <table width="80%" border="0" cellpadding="30" cellspacing="0" bgcolor="#2F4F4F" style="border-radius: 15px;"> <!-- Dark Slate Gray -->
+        <table width="90%" border="0" cellpadding="20" cellspacing="0" bgcolor="#2F4F4F" style="border-radius: 15px;">
           <tr>
             <td align="center">
-              <font face="Georgia, serif" size="7" color="#ADFF2F"><b>The World of Trees</b></font>
-              <hr width="70%">
-              <font face="Georgia, serif" size="4" color="#F5F5DC">
-                <p>Welcome to a digital forest. This website is a tribute to the silent, towering giants that sustain life on our planet. Journey down the tree, from the highest branches to the deepest roots, to explore their fascinating world.</p>
-                <p>Click on a part of the tree below to begin your journey.</p>
+              <font face="Georgia, serif" size="5" color="#F5F5DC">
+                <p>Journey into the heart of the forest. Click on the crown, trunk, or roots of the tree below to explore its story.</p>
               </font>
 
-              <br><br>
+              <!-- Image Map for Tree Navigation -->
+              <!-- The coordinates define clickable rectangular areas: x1,y1,x2,y2 -->
+              <map name="treemap">
+                <area shape="rect" coords="10,5,590,250" href="origin.html" alt="Tree Crown" title="Explore the Origin, Science, and Species">
+                <area shape="rect" coords="240,251,360,550" href="types.html" alt="Tree Trunk" title="Discover Types and Trees of India">
+                <area shape="rect" coords="5,551,595,695" href="goa.html" alt="Tree Roots" title="Learn about the Trees of Goa">
+              </map>
 
-              <!-- Tree navigation table -->
-              <table border="0" cellpadding="10" cellspacing="5" width="300">
-                <!-- Canopy/Crown -->
-                <tr><td align="center"><font face="Courier New, monospace" size="5" color="#32CD32"><b>~~~ CROWN ~~~</b></font></td></tr>
-                <tr><td align="center">|</td></tr>
-                
-                <!-- Branches -->
-                <tr><td align="center"><a href="origin.html"><font size="4">-- Origin of Trees --</font></a></td></tr>
-                <tr><td align="center">|</td></tr>
-                <tr><td align="center"><a href="scientific.html"><font size="4">-- Scientific Info --</font></a></td></tr>
-                <tr><td align="center">|</td></tr>
-                <tr><td align="center"><a href="species.html"><font size="4">-- Species & Family --</font></a></td></tr>
-                <tr><td align="center">|</td></tr>
-                
-                <!-- Trunk -->
-                <tr><td align="center"><font face="Courier New, monospace" size="5" color="#8B4513"><b>|| TRUNK ||</b></font></td></tr>
-                <tr><td align="center">|</td></tr>
-                <tr><td align="center"><a href="types.html"><font size="4">-- Types of Trees --</font></a></td></tr>
-                <tr><td align="center">|</td></tr>
-                <tr><td align="center"><a href="india.html"><font size="4">-- Native Trees of India --</font></a></td></tr>
-                <tr><td align="center">|</td></tr>
-                
-                <!-- Roots -->
-                <tr><td align="center"><font face="Courier New, monospace" size="5" color="#A0522D"><b>/|\ ROOTS /|\</b></font></td></tr>
-                 <tr><td align="center"><a href="goa.html"><font size="4">-- Trees in Goa --</font></a></td></tr>
-              </table>
+              <!-- Transparent Tree PNG with the image map -->
+              <img 
+                src="https://i.ibb.co/6g3wzCf/tree-transparent.png" 
+                alt="Tree navigation map" 
+                usemap="#treemap"
+                width="600"
+                border="0"
+              >
 
-            </td>
-          </tr>
-          <tr>
-            <td align="center">
               <hr width="70%">
-              <font face="Georgia, serif" size="2" color="#D3D3D3">
-                <p>Website built using only HTML table layouts and attributes.</p>
+              <font face="Georgia, serif" size="3" color="#D3D3D3">
+                <p>Listen to the sounds of the forest...</p>
+                <audio controls loop autoplay>
+                  <source src="https://www.soundjay.com/nature/sounds/forest-02.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+                <p><font size="2">(Autoplay may be blocked by your browser; please press play if needed.)</font></p>
               </font>
             </td>
           </tr>
@@ -73,8 +71,9 @@
         
       </td>
     </tr>
-  </table>
+</table>
 
 </body>
 </html>
+
 
